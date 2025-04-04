@@ -201,3 +201,10 @@ The application includes error handling for:
 3. Commit your changes
 4. Push to the branch
 5. Create a new Pull Request
+
+
+
+# Regular curl
+curl -X POST http://localhost:8080/api/messages \
+-H "Content-Type: application/json" \
+-d "{\"foracid\":\"1234567890\",\"acctName\":\"Test Account\",\"tranId\":\"T123\",\"tranAmt\":100.50,\"tranDate\":\"2024-04-04\",\"tranType\":\"CREDIT\",\"tranParticular\":\"Test Transaction\"}"
